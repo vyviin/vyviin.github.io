@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!-- declaration to browser: this is an HTML document type --> 
+<html lang="en"> <!-- opening tag so browser knows the code starts and ends (note the closing </html> tag)--> 
+    <head> <!-- holds metadata ex. page title -->
+        <link rel="stylesheet" href="style.css"> <!-- links css style to my html-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- site will scale correctly on any device-->
+        <title>Vivian's Website</title> 
+        <meta charset="UTF-8">
+    </head> 
+    <body> <!-- All visible content on the page -->
+        <!-- Main page heading -->
+        <h1 class = "heading">Vivian's Homepage</h1>
+        <!-- A paragraph -->
+        <p><span style="font-size:26px;">W</span>elcome to my <em><strong>first</strong></em> website!!! This is sooo exciting!!!!!</p>
+        <button class = "but">Click me~</button>
+        <br> 
+        <!-- Image of shim sue ae -->
+        <img class = "pic" alt="OP. TL my favv" src="https://static.wikia.nocookie.net/webtoon/images/3/3b/C206c0cefbf404191b8901a97bbd2a18.jpg/revision/latest/scale-to-width-down/250?cb=20221223055713">
+
+      <script> // Adding our JavaScript in the script tag 
+        // Identifying our image
+        const pic = document.querySelector(".pic");
+
+        // Adding reaction when image is clicked
+        pic.addEventListener("click", () => {
+           alert(`Vivian says "Hope you like the virus! >;)"`);
+        });
+
+        const but = document.querySelector(".but");
+        but.addEventListener("click", () => {
+           alert(`LOSER! You fell for it!!! Now downloading a virus...`);
+        });
+
+      </script>
+    </body> 
+    </html>

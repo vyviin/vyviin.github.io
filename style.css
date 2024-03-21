@@ -1,0 +1,29 @@
+/* changes paragraph colour*/
+p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+body {
+  background-color: rgb(255, 155, 167);
+}
+
+/* header*/
+h1 { 
+  font-size: 24px;
+  color: rgb(133, 20, 20);
+  text-align: center;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
