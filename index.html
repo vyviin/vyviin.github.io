@@ -5,11 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- site will scale correctly on any device-->
         <title>Vivian's Website</title> 
         <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="cake.png">
+        <link rel="icon" type="image/x-icon" href="cake.png"> <!-- favicon-->
     </head> 
     <body> <!-- All visible content on the page -->
         <!-- Main page heading -->
         <h1 class = "heading">Vivian's Homepage</h1>
+        <p>Click the button to display the date.</p>
+        <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+        <p id="demo"></p>
         <!-- A paragraph -->
         <p><span style="font-size:26px;">W</span>elcome to my <em><strong>first</strong></em> website!!! This is sooo exciting!!!!!</p>
         <button class = "but">Click me~</button>
@@ -20,7 +23,6 @@
       <script> // Adding our JavaScript in the script tag 
         // Identifying our image
         const pic = document.querySelector(".pic");
-
         // Adding reaction when image is clicked
         pic.addEventListener("click", () => {
            alert(`Vivian says "Hope you like the virus! >;)"`);
